@@ -675,6 +675,100 @@ h1 em,h2 em,h3 em{font-style:normal;color:inherit;font-weight:500}
  .results{grid-template-columns:repeat(4,minmax(0,1fr))}
  .cap h3{font-size:42px}
 }
+
+/* иллюстрации */
+.vz{margin:clamp(28px,4vw,44px) 0 0}
+.vz figcaption{margin-top:14px;font-size:15px;line-height:1.4;color:var(--mute);font-weight:600;text-align:center;text-wrap:balance}
+.vz svg{display:block;width:100%;height:auto}
+.vz-c{background:#fff;border-radius:var(--r);padding:clamp(16px,2.6vw,28px);box-shadow:var(--sh);transition:translate .25s,box-shadow .25s}
+.vz-c:hover{translate:0 -4px;box-shadow:var(--sh2)}
+.vz-noPad{padding:0;overflow:hidden}
+.vz-art{position:relative}
+.vz .wd{font-size:clamp(17px,1.9vw,21px);font-weight:700;line-height:1.3;margin-top:12px}
+.vz .wd .tr-i{white-space:nowrap}
+.vz-cap{font-size:15px;line-height:1.35;color:var(--mute);margin-top:4px}
+.vz-hks{display:flex;justify-content:center;gap:6px;min-height:34px;margin-top:8px}
+.vz-hk{width:34px!important;height:34px!important}
+.vz .vz-hks svg{margin:0}
+.vz-wh2,.vz-wh3{display:grid;gap:16px;grid-template-columns:repeat(2,minmax(0,1fr));max-width:820px;margin-inline:auto}
+.vz-wh3{grid-template-columns:repeat(3,minmax(0,1fr));max-width:980px}
+.vz-pp{background:#fff;border-radius:var(--r);box-shadow:var(--sh);padding:clamp(16px,2.2vw,24px);text-align:center;transition:translate .25s,box-shadow .25s}
+.vz-pp:hover{translate:0 -4px;box-shadow:var(--sh2)}
+
+.vz-wed{margin-top:28px;max-width:520px}
+.vz-bub{position:absolute;font-weight:700;font-size:clamp(14px,1.45vw,18px);line-height:1;padding:.55em .85em;border-radius:15px 15px 15px 4px;background:var(--pale);color:#4D3A0E;white-space:nowrap}
+.vz-bub.b1{left:5%;top:11%}
+.vz-bub.b2{right:5%;top:11%;background:var(--peach);color:var(--red-d);border-radius:15px 15px 4px 15px}
+.vz-photo{position:absolute;right:4%;bottom:6%;rotate:-5deg;background:#fff;box-shadow:var(--sh);padding:7px 10px;border-radius:5px;transition:rotate .25s}
+.vz-photo:hover{rotate:0deg}
+.vz-phot{display:block;font-size:13px;font-weight:700;color:var(--ink);white-space:nowrap;line-height:1.2}
+
+.vz-tags{position:absolute;inset:0}
+.vz-tags .sg{position:absolute;background:#fff;box-shadow:0 8px 20px rgba(31,70,66,.12);padding:.45em .75em;border-radius:9px;font-size:clamp(13px,1.45vw,18px);font-weight:700;line-height:1.1;white-space:nowrap;transform:translateX(-50%)}
+.vz-tags .s1{left:25.8%;top:24%}
+.vz-tags .s2{left:38%;top:55%}
+.vz-tags .s3{left:81%;top:56%}
+.vz-tags .s4{left:55.7%;top:15%}
+.vz-tags .tr-i{white-space:nowrap}
+
+.vz-mls{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.vz-ml{text-align:center;display:flex;flex-direction:column;align-items:center;transition:scale .25s}
+.vz-ml:hover{scale:1.03}
+.vz-ml .stk{display:flex;flex-direction:row;align-items:center;gap:6px;justify-content:center}
+.vz-ml .lt{position:relative;width:clamp(68px,7.7vw,110px)}
+.vz-ml .lt span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:clamp(22px,2.6vw,34px);font-weight:800;line-height:1}
+.vz-ml .lt.c span{color:#fff}
+.vz-ml .lt.b span{color:#4D3A0E;padding-bottom:18%}
+.vz-ml .ar{width:22px;height:22px;color:var(--mute);rotate:-90deg;flex:none}
+
+.vz-tr-r{display:flex;align-items:flex-end;justify-content:center;gap:0;flex-wrap:nowrap}
+.vz-eng{width:clamp(150px,17vw,220px)!important;flex:none}
+.vz-tr-r .cp{width:clamp(14px,2vw,26px);height:10px;background:var(--gold-d);border-radius:5px;margin-bottom:28px;flex:none}
+.vz-wg{flex:1 1 0;min-width:0;display:flex;flex-direction:column}
+.vz-wg .bd{background:var(--wall);border-radius:14px;min-height:clamp(96px,10vw,130px);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:8px 10px;box-shadow:inset 0 0 0 2px var(--line)}
+.vz-wg .wd{margin:0;font-size:clamp(15px,1.5vw,19px)}
+.vz-wg span{font-size:14px;color:var(--mute);margin-top:2px}
+.vz-wg.w2 .bd{background:var(--pale);box-shadow:inset 0 0 0 2px var(--gold)}
+.vz-wg .wh{width:100%;height:34px;margin-top:-1px}
+
+.vz-sw{display:grid;grid-template-columns:repeat(4,auto);justify-content:center;gap:10px 30px;padding:18px clamp(14px,2.4vw,28px) 22px}
+.vz-sw .sl{display:inline-flex;align-items:center;gap:9px;font-weight:700;font-size:clamp(16px,1.7vw,20px);white-space:nowrap}
+.vz-sw .n{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:var(--teal);color:#fff;font-style:normal;font-weight:700;font-size:14px;flex:none}
+
+.vz-door .vz-bt{position:absolute;width:9.5%;aspect-ratio:1;display:flex;align-items:center;justify-content:center;border-radius:13%;font-weight:800;font-size:clamp(16px,2.8vw,32px);line-height:1;color:#fff}
+.vz-door .tl1{left:16%;top:47%;background:var(--teal)}
+.vz-door .n1{left:55.2%;top:54%;width:7.4%;background:#B4492F}
+.vz-door .go{left:78%;top:58%;background:var(--cop)}
+.vz-wdc{text-align:center}
+
+@media(max-width:1000px) and (min-width:721px){.vz-mls{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}}
+.vz-vws .vz-mls{gap:16px}
+.vz-vw{text-align:center;transition:scale .25s}.vz-vw:hover{scale:1.03}
+.vz-vw svg{max-width:150px;margin-inline:auto}
+.vz-vw .wd{font-size:clamp(20px,2.4vw,28px);font-weight:700}
+.vz-vw u{text-decoration:none;color:var(--cop);font-weight:800}
+.vz-vw b{color:var(--red);font-weight:800}
+.vz-fin{max-width:760px;margin-inline:auto}
+.vz-fin-in{display:flex;align-items:center;justify-content:center;gap:clamp(16px,3vw,30px)}
+.vz-fin-in svg{width:clamp(110px,14vw,150px);flex:none}
+.vz-fw{font-size:clamp(21px,2.6vw,32px);font-weight:700;line-height:1.2}
+
+@media(max-width:720px){
+.vz-fin-in{flex-direction:column;text-align:center}
+.vz-wh2,.vz-wh3{grid-template-columns:minmax(0,1fr);gap:12px}
+.vz-wh3 svg,.vz-wh2 svg{max-width:230px;margin-inline:auto}
+.vz-mls{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 8px}
+.vz-tags{position:static;display:flex;flex-wrap:wrap;gap:6px;padding:12px;justify-content:center}
+.vz-tags .sg{position:static;transform:none;box-shadow:inset 0 0 0 1.500px var(--line)}
+.vz-tr-r{flex-direction:column;align-items:stretch}
+.vz-eng{width:190px!important;align-self:center}
+.vz-tr-r .cp{width:10px;height:18px;margin:0 auto;border-radius:5px}
+.vz-wg .wh{display:none}
+.vz-wg .wd{font-size:17px}
+.vz-sw{grid-template-columns:repeat(2,minmax(0,auto));gap:10px 14px}
+.vz-sw .sl{font-size:15px}
+.vz-door .vz-bt{font-size:clamp(14px,4.8vw,22px)}
+}
 </style>
 
 </head>
@@ -742,6 +836,16 @@ h1 em,h2 em,h3 em{font-style:normal;color:inherit;font-weight:500}
   <div class="story-h rv">
     <h2>Товарищ <b>Айше</b></h2>
     <p class="lead">Короткая история о том, как три хвоста меняют человеку пол на целый вечер.</p>
+<figure class="vz vz-wed" data-vz="wed"><div class="vz-c"><div class="vz-art">
+<svg viewBox="0 0 560 440" aria-hidden="true"><path d="M0 34c70 34 208 34 280 0s210-34 280 0" fill="none" stroke="#DDE8E6" stroke-width="3"/><g class="bu"><path d="M50 46l24 40 18-34z" fill="#27A094"/><path d="M134 62l18 40 22-38z" fill="#EBC76B"/><path d="M226 58l16 42 22-44z" fill="#27A094"/><path d="M322 44l16 42 22-42z" fill="#EBC76B"/><path d="M412 36l16 40 24-34z" fill="#27A094"/><path d="M496 36l14 38 20-30z" fill="#EBC76B"/></g>
+<rect x="0" y="300" width="560" height="140" fill="#F2F8F7"/>
+<!-- тётя слева --><g class="au au1"><circle cx="112" cy="216" r="50" fill="#F2D3BD"/><path d="M60 228c-4-64 22-92 54-92s58 26 54 92c-14-38-40-48-60-46-20 0-36 12-48 46z" fill="#3F2E1E"/><path d="M28 330c4-62 40-92 84-92s80 30 84 92z" fill="#27A094"/><g fill="none" stroke="#EBC76B" stroke-width="10"><path d="M76 262c20 26 52 26 72 0"/><path d="M68 280c28 32 60 32 88 0"/></g><circle cx="114" cy="310" r="11" fill="#EBC76B"/><circle cx="46" cy="212" r="7" fill="#EBC76B"/><circle cx="178" cy="212" r="7" fill="#EBC76B"/><circle cx="98" cy="212" r="3.500" fill="#1F3533"/><circle cx="128" cy="212" r="3.500" fill="#1F3533"/><path d="M104 234q10 7 20 0" fill="none" stroke="#1F3533" stroke-width="3" stroke-linecap="round"/></g>
+<!-- я с бородой --><g class="me"><path d="M196 330c6-52 40-74 84-74s78 22 84 74z" fill="#5C706E"/><circle cx="280" cy="210" r="48" fill="#F2D3BD"/><path d="M232 200c0-46 24-64 50-64s48 18 50 64c-10-16-20-22-50-22s-40 6-50 22z" fill="#1F3533"/><path d="M234 216c0 60 22 92 46 92s46-32 46-92c-8 12-16 14-22 12-8 10-40 10-48 0-6 2-14 0-22-12z" fill="#1F3533"/><circle cx="262" cy="206" r="4" fill="#1F3533"/><circle cx="298" cy="206" r="4" fill="#1F3533"/></g>
+<!-- тётя справа --><g class="au au2"><circle cx="448" cy="216" r="50" fill="#F2D3BD"/><path d="M396 226c-6-60 24-90 54-90s60 28 54 90c-12-36-38-46-58-46-22 0-38 10-50 46z" fill="#8C6310"/><path d="M364 330c4-62 40-92 84-92s80 30 84 92z" fill="#EBC76B"/><g fill="none" stroke="#CFA646" stroke-width="10"><path d="M412 262c20 26 52 26 72 0"/><path d="M404 280c28 32 60 32 88 0"/></g><circle cx="432" cy="212" r="3.500" fill="#1F3533"/><circle cx="462" cy="212" r="3.500" fill="#1F3533"/><path d="M438 232q10 8 20 0" fill="none" stroke="#1F3533" stroke-width="3" stroke-linecap="round"/></g>
+<rect x="0" y="330" width="560" height="110" rx="12" fill="#27A094"/><path d="M0 330h560v14H0z" fill="#12857A"/><g fill="#fff"><ellipse cx="120" cy="386" rx="60" ry="17"/><ellipse cx="280" cy="386" rx="60" ry="17"/><ellipse cx="440" cy="386" rx="60" ry="17"/></g><ellipse cx="120" cy="384" rx="36" ry="9" fill="#F3DFA2"/><ellipse cx="280" cy="384" rx="36" ry="9" fill="#DDF3EF"/><ellipse cx="440" cy="384" rx="36" ry="9" fill="#F3DFA2"/></svg>
+<span class="vz-bub b1" lang="tr">Bu Ayşe.</span><span class="vz-bub b2" lang="tr">Maşallah!</span>
+<div class="vz-photo"><span class="vz-phot" lang="tr">Ayşe ile gelin.</span></div>
+</div></div></figure>
   </div>
   <div class="rv">
     <p class="line" style="margin-top:0">Меня позвали на свадьбу. Свадьба в Измире. На свадьбе триста человек. Из трёхсот я знаю одну. Айше.</p>
@@ -776,7 +880,12 @@ h1 em,h2 em,h3 em{font-style:normal;color:inherit;font-weight:500}
       <li><span class="gc"><svg class="ic"><use href="#i-check"/></svg></span>Цепочка это когда вещь сама становится хозяином. Домино из слов.</li>
     </ul></div>
   <div class="stack"><div class="ex"><button type="button" class="say" data-say="taş ev" aria-label="Послушать"><svg class="ic"><use href="#i-sound"/></svg></button><div class="ex-t"><p class="tr" lang="tr">taş ev</p><p class="ru">каменный дом. Ноль хвостов</p></div></div><div class="ex"><button type="button" class="say" data-say="ders kitabı" aria-label="Послушать"><svg class="ic"><use href="#i-sound"/></svg></button><div class="ex-t"><p class="tr" lang="tr">ders <b class="rt">kitab</b><i class="a1">ı</i></p><p class="ru">учебник. Один хвост</p></div></div><div class="ex"><button type="button" class="say" data-say="Ayşe&#x27;nin evi" aria-label="Послушать"><svg class="ic"><use href="#i-sound"/></svg></button><div class="ex-t"><p class="tr" lang="tr"><b class="rt">Ayşe'</b><i class="a1">nin</i> <b class="rt">ev</b><i class="a1">i</i></p><p class="ru">дом Айше. Два хвоста</p></div></div></div>
-</div></div></div></section>
+</div></div>
+<figure class="vz vz-tails" data-vz="tails"><div class="vz-wh3">
+<div class="vz-pp"><svg viewBox="0 0 280 220" aria-hidden="true"><path d="M46 118 140 46l94 72z" fill="#8C6310"/><rect x="60" y="118" width="164" height="94" fill="#F2F8F7"/><g fill="#B8C4C2"><rect x="64" y="126" width="46" height="24" rx="5"/><rect x="114" y="126" width="46" height="24" rx="5"/><rect x="164" y="126" width="46" height="24" rx="5"/><rect x="88" y="154" width="46" height="24" rx="5"/><rect x="138" y="154" width="46" height="24" rx="5"/><rect x="64" y="182" width="46" height="24" rx="5"/><rect x="114" y="182" width="46" height="24" rx="5"/><rect x="164" y="182" width="46" height="24" rx="5"/></g><rect x="122" y="164" width="36" height="48" fill="#27A094"/></svg><div class="vz-hks"></div><p class="wd"><span class="tr-i" lang="tr">taş ev</span></p><p class="vz-cap">каменный дом. Ноль хвостов</p></div>
+<div class="vz-pp"><svg viewBox="0 0 280 220" aria-hidden="true"><rect x="60" y="50" width="160" height="150" rx="8" fill="#12857A"/><rect x="60" y="50" width="22" height="150" rx="4" fill="#0C6A61"/><rect x="104" y="80" width="100" height="10" rx="5" fill="#F3DFA2"/><rect x="104" y="102" width="74" height="10" rx="5" fill="#DDF3EF"/></svg><div class="vz-hks"><svg class="vz-hk" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 8c22 0 24 26 4 24" fill="none" stroke="#CFA646" stroke-width="7" stroke-linecap="round"/></svg></div><p class="wd"><span class="tr-i" lang="tr">ders <b class="rt">kitab</b><i class="a1">ı</i></span></p><p class="vz-cap">учебник. Один хвост</p></div>
+<div class="vz-pp"><svg viewBox="0 0 280 220" aria-hidden="true"><path d="M104 118 180 54l76 64z" fill="#27A094"/><rect x="118" y="118" width="124" height="88" fill="#EEF9F7"/><rect x="170" y="158" width="28" height="48" fill="#CFA646"/><circle cx="68" cy="108" r="28" fill="#F2D3BD"/><path d="M38 118c-4-40 14-60 32-60s36 20 30 60c-6-18-18-26-30-26s-26 8-32 26z" fill="#3F2E1E"/><path d="M24 214c2-44 22-68 46-68s44 24 46 68z" fill="#EBC76B"/></svg><div class="vz-hks"><svg class="vz-hk" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 8c22 0 24 26 4 24" fill="none" stroke="#CFA646" stroke-width="7" stroke-linecap="round"/></svg><svg class="vz-hk" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 8c22 0 24 26 4 24" fill="none" stroke="#CFA646" stroke-width="7" stroke-linecap="round"/></svg></div><p class="wd"><span class="tr-i" lang="tr"><b class="rt">Ayşe'</b><i class="a1">nin</i> <b class="rt">ev</b><i class="a1">i</i></span></p><p class="vz-cap">дом Айше. Два хвоста</p></div>
+</div><figcaption>Держится всё на хвостах. Их бывает ноль, один или два.</figcaption></figure></div></section>
 
 <section class="sec" id="why" data-floor data-name="Зачем" style="padding-top:10px"><div class="wrap">
   <div class="rv"><h2>Зачем <b>это тебе</b></h2>
@@ -787,6 +896,14 @@ h1 em,h2 em,h3 em{font-style:normal;color:inherit;font-weight:500}
     <div class="tl g rv"><svg class="ic"><use href="#i-fam"/></svg><h3>Родня</h3><p>Каждый человек тут чей-то.</p><div class="ex"><button type="button" class="say" data-say="Annemin kardeşi" aria-label="Послушать"><svg class="ic"><use href="#i-sound"/></svg></button><div class="ex-t"><p class="tr" lang="tr"><b class="rt">Anne</b><i class="a1">m</i><i class="a2">in</i> <b class="rt">kardeş</b><i class="a1">i</i></p><p class="ru">брат или сестра моей мамы</p></div></div></div>
     <div class="tl rv"><svg class="ic"><use href="#i-pass"/></svg><h3>Документы</h3><p>Анкета спросит. Анкета не ждёт.</p><div class="ex"><button type="button" class="say" data-say="Pasaport numarası" aria-label="Послушать"><svg class="ic"><use href="#i-sound"/></svg></button><div class="ex-t"><p class="tr" lang="tr">Pasaport <b class="rt">numara</b><i class="a1">sı</i></p><p class="ru">номер паспорта</p></div></div></div>
   </div>
+<figure class="vz vz-city" data-vz="city"><div class="vz-c vz-noPad"><div class="vz-art">
+<svg viewBox="0 0 1180 460" aria-hidden="true"><rect width="1180" height="460" fill="#EEF9F7"/><g class="vz-bg"><path d="M630 300V130l14-34h-30l44-74 44 74h-30l14 34v170z" fill="#BBD7D3"/><rect x="646" y="150" width="12" height="20" rx="6" fill="#EEF9F7"/><rect x="676" y="150" width="12" height="20" rx="6" fill="#EEF9F7"/></g>
+<rect x="30" y="170" width="260" height="290" fill="#F3DFA2"/><g fill="#FBEFC9"><rect x="60" y="210" width="60" height="70" rx="5"/><rect x="146" y="210" width="60" height="70" rx="5"/><rect x="60" y="310" width="60" height="70" rx="5"/><rect x="146" y="310" width="60" height="70" rx="5"/></g>
+<rect x="310" y="210" width="290" height="250" fill="#DDF3EF"/><path d="M296 250h318l-24 48H320z" fill="#27A094"/><path d="M340 298v-6M390 298v-6M440 298v-6" stroke="#fff"/><rect x="346" y="318" width="84" height="142" fill="#fff"/><rect x="460" y="318" width="120" height="94" rx="5" fill="#fff"/><g class="vz-cup"><path d="M494 348h48v20c0 16-10 24-24 24s-24-8-24-24z" fill="#8C6310"/><path d="M542 356h8a8 8 0 0 1 0 18h-8" fill="none" stroke="#8C6310" stroke-width="4"/><path d="M506 334c-5-7 5-9 0-16M522 334c-5-7 5-9 0-16" stroke="#CFA646" stroke-width="4" fill="none" stroke-linecap="round"/></g>
+<rect x="760" y="130" width="390" height="330" fill="#12857A"/><g fill="#27A094"><rect x="790" y="170" width="46" height="60" rx="5"/><rect x="858" y="170" width="46" height="60" rx="5"/><rect x="926" y="170" width="46" height="60" rx="5"/><rect x="994" y="170" width="46" height="60" rx="5"/><rect x="1062" y="170" width="46" height="60" rx="5"/><rect x="790" y="250" width="46" height="60" rx="5"/><rect x="858" y="250" width="46" height="60" rx="5"/><rect x="994" y="250" width="46" height="60" rx="5"/><rect x="1062" y="250" width="46" height="60" rx="5"/></g><g class="vz-plane" fill="#EBC76B"><path d="M940 84l92-34 8 4-26 28 32 8 14-14 8 2-8 26 18 10-2 6-34-4-22 22-8-2 8-30-26-8-54 14z"/></g>
+<rect x="298" y="150" width="12" height="310" fill="#1F3533"/><circle cx="304" cy="150" r="10" fill="#1F3533"/><rect x="0" y="448" width="1180" height="12" fill="#5C706E"/></svg>
+<div class="vz-tags" lang="tr"><span class="sg s1"><span class="tr-i" lang="tr">İstiklal <b class="rt">Cadde</b><i class="a1">si</i></span></span><span class="sg s2"><span class="tr-i" lang="tr">Türk <b class="rt">kahve</b><i class="a1">si</i></span></span><span class="sg s3"><span class="tr-i" lang="tr">Türk Hava <b class="rt">Yol</b><i class="a1">ları</i></span></span><span class="sg s4"><span class="tr-i" lang="tr">Galata <b class="rt">Kule</b><i class="a1">si</i></span></span></div>
+</div></div><figcaption>Половина вывесок в Турции это изафет.</figcaption></figure>
 </div></section>
 
 <section class="sec hall" id="how" data-floor data-name="Как строится"><div class="wrap">
@@ -803,6 +920,10 @@ h1 em,h2 em,h3 em{font-style:normal;color:inherit;font-weight:500}
     <div class="ex"><button type="button" class="say" data-say="okul müdürü" aria-label="Послушать"><svg class="ic"><use href="#i-sound"/></svg></button><div class="ex-t"><p class="tr" lang="tr">okul <b class="rt">müdür</b><i class="a1">ü</i></p><p class="ru">директор школы: профессия такая</p></div></div>
     <div class="ex"><button type="button" class="say" data-say="okulun müdürü" aria-label="Послушать"><svg class="ic"><use href="#i-sound"/></svg></button><div class="ex-t"><p class="tr" lang="tr"><b class="rt">okul</b><i class="a1">un</i> <b class="rt">müdür</b><i class="a1">ü</i></p><p class="ru">директор этой школы: вон тот, с папкой</p></div></div>
   </div>
+<figure class="vz vz-okul" data-vz="okul"><div class="vz-wh2">
+<div class="vz-pp"><svg viewBox="0 0 280 200" aria-hidden="true"><rect x="28" y="70" width="224" height="130" fill="#F2F8F7"/><path d="M14 74 140 16l126 58z" fill="#DDE8E6"/><g fill="#DDE8E6"><rect x="58" y="100" width="34" height="42" rx="3"/><rect x="186" y="100" width="34" height="42" rx="3"/><rect x="122" y="140" width="36" height="60"/></g><g fill="#C9DAD7"><circle cx="140" cy="102" r="24"/><path d="M92 200c2-46 22-68 48-68s46 22 48 68z"/></g></svg><p class="wd"><span class="tr-i" lang="tr">okul <b class="rt">müdür</b><i class="a1">ü</i></span></p><p class="vz-cap">директор школы: профессия такая</p></div>
+<div class="vz-pp"><svg viewBox="0 0 280 200" aria-hidden="true"><rect x="28" y="70" width="224" height="130" fill="#EEF9F7"/><path d="M14 74 140 16l126 58z" fill="#27A094"/><g fill="#DDF3EF"><rect x="58" y="100" width="34" height="42" rx="3"/><rect x="186" y="100" width="34" height="42" rx="3"/></g><path d="M86 200c2-46 22-68 54-68s52 22 54 68z" fill="#12857A"/><circle cx="140" cy="102" r="24" fill="#F2D3BD"/><path d="M116 96c2-22 12-30 26-30s24 10 24 30c-10-10-34-12-50 0z" fill="#1F3533"/><rect class="vz-fold" x="170" y="146" width="42" height="52" rx="5" fill="#EBC76B"/><path class="vz-point" d="M66 50l38 44" stroke="#CFA646" stroke-width="7" stroke-linecap="round"/><path class="vz-point" d="M108 74l-4 22-22-6" fill="none" stroke="#CFA646" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg><p class="wd"><span class="tr-i" lang="tr"><b class="rt">okul</b><i class="a1">un</i> <b class="rt">müdür</b><i class="a1">ü</i></span></p><p class="vz-cap">директор этой школы: вон тот, с папкой</p></div>
+</div></figure>
   <div class="q card mini rv" data-mini="0" style="margin-top:16px"></div>
 
   <div class="sub">
@@ -827,6 +948,7 @@ h1 em,h2 em,h3 em{font-style:normal;color:inherit;font-weight:500}
         <div class="cap"><h3>Четыре пары</h3>То же самое у вещи: <b>-ı, -i, -u, -ü</b>. После гласной <b>-sı, -si, -su, -sü</b>.</div>
       </div>
     </div></div>
+<figure class="vz vz-vws" data-vz="vws"><div class="vz-c vz-mls"><div class="vz-vw"><svg viewBox="0 0 160 130" aria-hidden="true"><circle cx="80" cy="50" r="30" fill="#F2D3BD"/><path d="M50 56c-4-30 12-42 30-42s34 12 30 42c-6-14-16-20-30-20s-24 6-30 20z" fill="#3F2E1E"/><path d="M38 130c2-38 20-56 42-56s40 18 42 56z" fill="#27A094"/></svg><p class="wd" lang="tr">k<u>ı</u>z<b>ın</b></p></div><div class="vz-vw"><svg viewBox="0 0 160 130" aria-hidden="true"><path d="M18 62 80 12l62 50z" fill="#8C6310"/><rect x="34" y="62" width="92" height="66" fill="#F3DFA2"/><rect x="66" y="84" width="28" height="44" fill="#12857A"/></svg><p class="wd" lang="tr"><u>e</u>v<b>in</b></p></div><div class="vz-vw"><svg viewBox="0 0 160 130" aria-hidden="true"><path d="M8 64 80 22l72 42z" fill="#27A094"/><rect x="24" y="64" width="112" height="64" fill="#EEF9F7"/><g fill="#DDF3EF"><rect x="38" y="78" width="22" height="28" rx="2"/><rect x="100" y="78" width="22" height="28" rx="2"/></g><rect x="68" y="88" width="24" height="40" fill="#CFA646"/><rect x="77" y="6" width="4" height="26" fill="#1F3533"/><path d="M81 8h24l-8 8 8 8H81z" fill="#EBC76B"/></svg><p class="wd" lang="tr">ok<u>u</u>l<b>un</b></p></div><div class="vz-vw"><svg viewBox="0 0 160 130" aria-hidden="true"><path d="M80 128V76" stroke="#12857A" stroke-width="6"/><path d="M80 100c-20-12-36-6-40 6 16 8 30 4 40-6zM80 92c18-12 32-6 36 6-14 8-28 4-36-6z" fill="#27A094"/><circle cx="80" cy="44" r="34" fill="#B4492F"/><path d="M80 18c-16 8-22 22-14 34M80 18c16 8 22 22 14 34M60 40c8 12 32 12 40 0" fill="none" stroke="#fff" stroke-width="4"/></svg><p class="wd" lang="tr">g<u>ü</u>l<b>ün</b></p></div></div><figcaption>Выбирает последняя гласная.</figcaption></figure>
     <div class="card rv" style="margin-top:18px">
       <h3>Мой, твой, её</h3>
       <p>Когда хозяин человек, хвост вещи меняется. Выбери слово.</p>
@@ -853,6 +975,7 @@ h1 em,h2 em,h3 em{font-style:normal;color:inherit;font-weight:500}
   <div class="sub">
     <h3 class="rv">Согласная <b>размякает</b></h3>
     <p class="txt rv">Четыре согласные держатся, пока к ним не подойдёт гласная. Подошла, и всё. Как ты при слове "скидка".</p>
+<figure class="vz vz-melt" data-vz="melt"><div class="vz-c"><div class="vz-mls"><div class="vz-ml"><div class="stk"><div class="lt c"><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M24 40 60 20l36 20v46L60 106 24 86z" fill="#27A094"/><path d="M24 40l36 20 36-20-36-20z" fill="#7CCDC4"/><path d="M60 60v46" stroke="#12857A" stroke-width="2"/></svg><span lang="tr">k</span></div><svg class="ar" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v15M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="lt b"><svg viewBox="0 0 120 120" aria-hidden="true"><path class="vz-bl" d="M20 42c0-13 11-22 40-22s40 9 40 22v30c0 6-4 10-8 10s-8-4-8-10v-5c0-4-2-6-6-6s-6 2-6 6v21c0 7-4 11-9 11s-9-4-9-11V67c0-4-2-6-6-6s-6 2-6 6v7c0 6-4 10-9 10s-9-4-9-10z" fill="#EBC76B"/><ellipse cx="60" cy="108" rx="46" ry="8" fill="#FBEFC9"/></svg><span lang="tr">ğ</span></div></div><p class="wd"><span class="tr-i" lang="tr"><b class="rt">çocuğ</b><i class="a1">un</i></span></p></div><div class="vz-ml"><div class="stk"><div class="lt c"><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M24 40 60 20l36 20v46L60 106 24 86z" fill="#27A094"/><path d="M24 40l36 20 36-20-36-20z" fill="#7CCDC4"/><path d="M60 60v46" stroke="#12857A" stroke-width="2"/></svg><span lang="tr">p</span></div><svg class="ar" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v15M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="lt b"><svg viewBox="0 0 120 120" aria-hidden="true"><path class="vz-bl" d="M20 42c0-13 11-22 40-22s40 9 40 22v30c0 6-4 10-8 10s-8-4-8-10v-5c0-4-2-6-6-6s-6 2-6 6v21c0 7-4 11-9 11s-9-4-9-11V67c0-4-2-6-6-6s-6 2-6 6v7c0 6-4 10-9 10s-9-4-9-10z" fill="#EBC76B"/><ellipse cx="60" cy="108" rx="46" ry="8" fill="#FBEFC9"/></svg><span lang="tr">b</span></div></div><p class="wd"><span class="tr-i" lang="tr"><b class="rt">kitab</b><i class="a1">ı</i></span></p></div><div class="vz-ml"><div class="stk"><div class="lt c"><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M24 40 60 20l36 20v46L60 106 24 86z" fill="#27A094"/><path d="M24 40l36 20 36-20-36-20z" fill="#7CCDC4"/><path d="M60 60v46" stroke="#12857A" stroke-width="2"/></svg><span lang="tr">ç</span></div><svg class="ar" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v15M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="lt b"><svg viewBox="0 0 120 120" aria-hidden="true"><path class="vz-bl" d="M20 42c0-13 11-22 40-22s40 9 40 22v30c0 6-4 10-8 10s-8-4-8-10v-5c0-4-2-6-6-6s-6 2-6 6v21c0 7-4 11-9 11s-9-4-9-11V67c0-4-2-6-6-6s-6 2-6 6v7c0 6-4 10-9 10s-9-4-9-10z" fill="#EBC76B"/><ellipse cx="60" cy="108" rx="46" ry="8" fill="#FBEFC9"/></svg><span lang="tr">c</span></div></div><p class="wd"><span class="tr-i" lang="tr"><b class="rt">ağac</b><i class="a1">ın</i></span></p></div><div class="vz-ml"><div class="stk"><div class="lt c"><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M24 40 60 20l36 20v46L60 106 24 86z" fill="#27A094"/><path d="M24 40l36 20 36-20-36-20z" fill="#7CCDC4"/><path d="M60 60v46" stroke="#12857A" stroke-width="2"/></svg><span lang="tr">t</span></div><svg class="ar" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v15M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="lt b"><svg viewBox="0 0 120 120" aria-hidden="true"><path class="vz-bl" d="M20 42c0-13 11-22 40-22s40 9 40 22v30c0 6-4 10-8 10s-8-4-8-10v-5c0-4-2-6-6-6s-6 2-6 6v21c0 7-4 11-9 11s-9-4-9-11V67c0-4-2-6-6-6s-6 2-6 6v7c0 6-4 10-9 10s-9-4-9-10z" fill="#EBC76B"/><ellipse cx="60" cy="108" rx="46" ry="8" fill="#FBEFC9"/></svg><span lang="tr">d</span></div></div><p class="wd"><span class="tr-i" lang="tr"><b class="rt">damad</b><i class="a1">ın</i></span></p></div></div></div><figcaption>Держатся, пока к ним не подойдёт гласная.</figcaption></figure>
     <div class="scene" data-scene="cons" data-n="4"><div class="stage">
       <div class="vis"><div class="cset" lang="tr">
         <div><span class="pair">k <b>→ ğ</b></span><div class="lets" data-w="çocu,k>ğ,un"></div></div>
@@ -887,6 +1010,7 @@ h1 em,h2 em,h3 em{font-style:normal;color:inherit;font-weight:500}
         <div class="cap"><h3>Средний работает за двоих</h3>Он сразу вещь и хозяин. Поэтому у него <b>два хвоста подряд</b>: -ı и -nın.</div>
       </div>
     </div></div>
+<figure class="vz vz-train" data-vz="train"><div class="vz-c"><div class="vz-tr-r"><svg class="vz-eng" viewBox="0 0 240 180" aria-hidden="true"><g class="smk" fill="#DDE8E6"><circle cx="64" cy="26" r="16"/><circle cx="92" cy="14" r="11"/><circle cx="42" cy="46" r="9"/></g><rect x="44" y="58" width="26" height="44" rx="5" fill="#1F3533"/><path d="M14 150V96a10 10 0 0 1 10-10h110v64z" fill="#12857A"/><path d="M120 60h96a10 10 0 0 1 10 10v80H120z" fill="#27A094"/><rect x="146" y="76" width="50" height="40" rx="5" fill="#DDF3EF"/><rect x="8" y="110" width="12" height="40" rx="4" fill="#EBC76B"/><circle cx="60" cy="150" r="22" fill="#1F3533"/><circle cx="60" cy="150" r="9" fill="#EBC76B"/><circle cx="176" cy="150" r="22" fill="#1F3533"/><circle cx="176" cy="150" r="9" fill="#EBC76B"/></svg><span class="cp"></span><div class="vz-wg w1"><div class="bd"><p class="wd"><span class="tr-i" lang="tr">Kız <b class="rt">kardeş</b><i class="a1">im</i><i class="a2">in</i></span></p><span>моей сестры</span></div><svg class="wh" viewBox="0 0 200 34" preserveAspectRatio="xMidYMin meet" aria-hidden="true"><circle cx="46" cy="16" r="16" fill="#1F3533"/><circle cx="46" cy="16" r="6" fill="#EBC76B"/><circle cx="154" cy="16" r="16" fill="#1F3533"/><circle cx="154" cy="16" r="6" fill="#EBC76B"/></svg></div><span class="cp"></span><div class="vz-wg w2"><div class="bd"><p class="wd"><span class="tr-i" lang="tr"><b class="rt">arkadaş</b><i class="a1">ı</i><i class="a2">nın</i></span></p><span>подруги</span></div><svg class="wh" viewBox="0 0 200 34" preserveAspectRatio="xMidYMin meet" aria-hidden="true"><circle cx="46" cy="16" r="16" fill="#1F3533"/><circle cx="46" cy="16" r="6" fill="#EBC76B"/><circle cx="154" cy="16" r="16" fill="#1F3533"/><circle cx="154" cy="16" r="6" fill="#EBC76B"/></svg></div><span class="cp"></span><div class="vz-wg w3"><div class="bd"><p class="wd"><span class="tr-i" lang="tr"><b class="rt">kız</b><i class="a1">ı</i></span></p><span>дочь</span></div><svg class="wh" viewBox="0 0 200 34" preserveAspectRatio="xMidYMin meet" aria-hidden="true"><circle cx="46" cy="16" r="16" fill="#1F3533"/><circle cx="46" cy="16" r="6" fill="#EBC76B"/><circle cx="154" cy="16" r="16" fill="#1F3533"/><circle cx="154" cy="16" r="6" fill="#EBC76B"/></svg></div></div></div><figcaption>Слова идут вагонами. Средний работает за двоих: у него два хвоста подряд.</figcaption></figure>
     <div class="card rv" style="margin-top:18px">
       <h3>Собери <b>родню</b></h3>
       <p>Нажимай людей. Цепочка строится сама, как у той тёти в золоте.</p>
@@ -912,6 +1036,10 @@ h1 em,h2 em,h3 em{font-style:normal;color:inherit;font-weight:500}
       <div class="card rv"><h3>Попробуй <b>прочитать</b></h3><p>Настоящие названия. Иди с конца.</p><div class="ex"><button type="button" class="say" data-say="Ankara Üniversitesi Tıp Fakültesi" aria-label="Послушать"><svg class="ic"><use href="#i-sound"/></svg></button><div class="ex-t"><p class="tr" lang="tr">Ankara <b class="rt">Üniversite</b><i class="a1">si</i> Tıp <b class="rt">Fakülte</b><i class="a1">si</i></p><p class="ru">медицинский факультет Университета Анкары</p></div></div><div class="ex"><button type="button" class="say" data-say="Türkiye Cumhuriyeti Merkez Bankası" aria-label="Послушать"><svg class="ic"><use href="#i-sound"/></svg></button><div class="ex-t"><p class="tr" lang="tr">Türkiye <b class="rt">Cumhuriyet</b><i class="a1">i</i> Merkez <b class="rt">Banka</b><i class="a1">sı</i></p><p class="ru">Центральный банк Турецкой Республики</p></div></div></div>
       <div class="card rv"><h3>Два хвоста не живут вместе</h3><p>Если слово уже с -sı, второй такой же не приклеится. Чей-то стакан для чая остаётся таким же.</p><div class="ex"><button type="button" class="say" data-say="Ayşe&#x27;nin çay bardağı" aria-label="Послушать"><svg class="ic"><use href="#i-sound"/></svg></button><div class="ex-t"><p class="tr" lang="tr"><b class="rt">Ayşe'</b><i class="a1">nin</i> çay <b class="rt">bardağ</b><i class="a1">ı</i></p><p class="ru">стакан для чая Айше</p></div></div></div>
     </div>
+<figure class="vz vz-sign" data-vz="sign"><div class="vz-c vz-noPad"><div class="vz-art">
+<svg viewBox="0 0 1180 300" aria-hidden="true"><rect width="1180" height="300" fill="#EEF9F7"/><path d="M60 120L590 20l530 100z" fill="#27A094"/><rect x="60" y="120" width="1060" height="28" fill="#12857A"/><g fill="#DDF3EF"><rect x="130" y="168" width="44" height="122"/><rect x="250" y="168" width="44" height="122"/><rect x="370" y="168" width="44" height="122"/><rect x="490" y="168" width="44" height="122"/><rect x="686" y="168" width="44" height="122"/><rect x="806" y="168" width="44" height="122"/><rect x="926" y="168" width="44" height="122"/><rect x="1046" y="168" width="44" height="122"/></g><rect x="566" y="178" width="48" height="112" rx="24" fill="#EBC76B"/><rect x="40" y="288" width="1100" height="12" fill="#5C706E"/><circle class="vz-sun" cx="1090" cy="56" r="26" fill="#EBC76B"/></svg></div>
+<div class="vz-sw" lang="tr"><span class="sl"><i class="n">4</i><span class="tr-i" lang="tr">Ankara</span></span><span class="sl"><i class="n">3</i><span class="tr-i" lang="tr"><b class="rt">Üniversite</b><i class="a1">si</i></span></span><span class="sl"><i class="n">2</i><span class="tr-i" lang="tr">Tıp</span></span><span class="sl"><i class="n">1</i><span class="tr-i" lang="tr"><b class="rt">Fakülte</b><i class="a1">si</i></span></span></div>
+</div><figcaption>Настоящие названия. Иди с конца: медицинский факультет Университета Анкары.</figcaption></figure>
   </div>
 
   <div class="sub">
@@ -926,6 +1054,11 @@ h1 em,h2 em,h3 em{font-style:normal;color:inherit;font-weight:500}
         <div class="cap"><h3>-i</h3>Винительный: кофе, который любят.<div class="ex"><button type="button" class="say" data-say="Türk kahvesini seviyorum." aria-label="Послушать"><svg class="ic"><use href="#i-sound"/></svg></button><div class="ex-t"><p class="tr" lang="tr">Türk <b class="rt">kahve</b><i class="a1">si</i><i class="a2">n</i><i class="a3">i</i> <b class="rt">sev</b><i class="a1">iyor</i><i class="a2">um</i>.</p><p class="ru">Я люблю турецкий кофе.</p></div></div></div>
       </div>
     </div></div>
+<figure class="vz vz-door" data-vz="door"><div class="vz-c"><div class="vz-art">
+<svg viewBox="0 0 900 340" aria-hidden="true"><rect y="300" width="900" height="40" rx="4" fill="#F2F8F7"/><rect x="330" y="30" width="170" height="270" fill="#27A094"/><rect x="346" y="46" width="138" height="254" fill="#EEF9F7"/><g class="vz-dl"><path d="M346 46l92 26v240l-92-12z" fill="#F3DFA2"/><circle cx="426" cy="190" r="7" fill="#8C6310"/></g>
+<g class="vz-man"><rect x="500" y="170" width="74" height="130" rx="20" fill="#12857A"/><circle cx="537" cy="138" r="32" fill="#F2D3BD"/><path d="M503 128h68v-18a16 16 0 0 0-16-16h-36a16 16 0 0 0-16 16z" fill="#12857A"/><rect x="497" y="124" width="80" height="10" rx="5" fill="#EBC76B"/><rect x="430" y="190" width="76" height="16" rx="8" fill="#12857A"/></g></svg>
+<span class="vz-bt wa tl1" lang="tr">si</span><span class="vz-bt m n1" lang="tr">n</span><span class="vz-bt w2 go" lang="tr">i</span>
+</div><p class="wd vz-wdc"><span class="tr-i" lang="tr">Türk <b class="rt">kahve</b><i class="a1">si</i><i class="a2">n</i><i class="a3">i</i></span></p></div><figcaption>Ничего не значит. Просто стоит и держит дверь.</figcaption></figure>
     <div class="grid g2">
       <div class="card rv"><h3>С другими падежами</h3><div class="ex"><button type="button" class="say" data-say="Ayşe&#x27;nin evinde kaldık." aria-label="Послушать"><svg class="ic"><use href="#i-sound"/></svg></button><div class="ex-t"><p class="tr" lang="tr"><b class="rt">Ayşe'</b><i class="a1">nin</i> <b class="rt">ev</b><i class="a1">i</i><i class="a2">n</i><i class="a3">de</i> <b class="rt">kal</b><i class="a1">dı</i><i class="a2">k</i>.</p><p class="ru">Мы остановились у Айше дома.</p></div></div><div class="ex"><button type="button" class="say" data-say="Okul müdürüne sordum." aria-label="Послушать"><svg class="ic"><use href="#i-sound"/></svg></button><div class="ex-t"><p class="tr" lang="tr">Okul <b class="rt">müdür</b><i class="a1">ü</i><i class="a2">n</i><i class="a3">e</i> <b class="rt">sor</b><i class="a1">du</i><i class="a2">m</i>.</p><p class="ru">Я спросил директора школы.</p></div></div></div>
       <div class="q card mini rv" data-mini="1"></div>
@@ -966,6 +1099,8 @@ h1 em,h2 em,h3 em{font-style:normal;color:inherit;font-weight:500}
     <div class="rs"><b>#04</b><p>Не станешь товарищем Айше.</p></div>
   </div>
 </div>
+<figure class="vz vz-fin" data-vz="fin"><div class="vz-c vz-fin-in"><svg viewBox="0 0 220 220" aria-hidden="true"><circle cx="110" cy="110" r="108" fill="#DDF3EF"/><path d="M36 220c4-54 34-76 74-76s70 22 74 76z" fill="#27A094"/><circle cx="110" cy="84" r="36" fill="#F2D3BD"/><path d="M74 78c0-34 16-48 36-48s36 14 36 48c-8-12-16-16-36-16s-28 4-36 16z" fill="#1F3533"/><path d="M76 92c0 44 16 66 34 66s34-22 34-66c-6 8-12 10-16 8-6 8-30 8-36 0-4 2-10 0-16-8z" fill="#1F3533"/><circle cx="98" cy="84" r="3.500" fill="#1F3533"/><circle cx="122" cy="84" r="3.500" fill="#1F3533"/></svg>
+<div><p class="vz-fw" lang="tr"><span class="tr-i" lang="tr"><b class="rt">Ayşe'</b><i class="a1">nin</i> <b class="rt">arkadaş</b><i class="a1">ı</i><i class="a2">yım</i>.</span></p><p class="vz-cap">Я друг Айше. Три хвоста.</p></div></div></figure>
 <div class="card rv" style="max-width:760px;margin:20px auto 0"><ul class="ck">
   <li><span class="num">1</span><div><b>Хозяин первый, вещь последняя</b><span class="d">Наоборот от русского.</span></div></li>
   <li><span class="num">2</span><div><b>Ноль хвостов: из чего</b><span class="d">taş ev, altın yüzük.</span></div></li>
@@ -1261,6 +1396,26 @@ if(cnt){
 }
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',xInit);else xInit();
+</script>
+<script>
+function vzInit(){
+var RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(RM||!window.gsap||!window.ScrollTrigger||innerHeight<500)return;
+function on(name,fn){[].forEach.call(document.querySelectorAll('[data-vz="'+name+'"]'),function(el){
+  var q=function(s){return [].slice.call(el.querySelectorAll(s))};
+  fn(gsap.timeline({defaults:{ease:'power2.out'},scrollTrigger:{trigger:el,start:'top 78%',once:true}}),q,el);});}
+on('wed',function(t,q){t.from(q('.au1,.au2'),{y:20,duration:.6,stagger:.2}).from(q('.vz-bub'),{scale:.5,duration:.4,stagger:.35,ease:'back.out(2.4)'},.3).from(q('.vz-photo'),{y:18,rotate:8,duration:.5},.9);});
+on('tails',function(t,q){t.from(q('.vz-pp'),{y:22,duration:.5,stagger:.16}).from(q('.vz-hk'),{scale:.3,rotation:-40,transformOrigin:'50% 50%',duration:.4,stagger:.15,ease:'back.out(2)'},.3);});
+on('city',function(t,q){t.from(q('.vz-tags .sg'),{y:16,duration:.45,stagger:.14,ease:'back.out(2)'}).from(q('.vz-plane'),{x:-80,y:26,duration:1.1},.1).from(q('.vz-cup'),{y:8,duration:.5},.2);});
+on('okul',function(t,q){t.from(q('.vz-pp'),{y:22,duration:.5,stagger:.18}).from(q('.vz-point'),{x:-14,y:-14,duration:.5,ease:'back.out(2)'},.4).from(q('.vz-fold'),{y:10,rotation:10,transformOrigin:'50% 100%',duration:.45},.5);});
+on('melt',function(t,q){t.from(q('.vz-bl'),{scaleY:.55,transformOrigin:'50% 0%',duration:.7,stagger:.14,ease:'elastic.out(1,.55)'},.15).from(q('.lt.c'),{y:-10,duration:.5,stagger:.14},0);});
+on('train',function(t,q){t.from(q('.vz-eng,.vz-wg,.cp'),{x:50,duration:.8,stagger:.05,ease:'power3.out'}).from(q('.smk circle'),{scale:.3,transformOrigin:'50% 50%',duration:.6,stagger:.12,ease:'back.out(2)'},.3);});
+on('sign',function(t,q){t.from(q('.sl'),{y:14,duration:.45,stagger:{each:.2,from:'end'},ease:'back.out(2)'}).from(q('.vz-sun'),{y:20,duration:.6},.2);});
+on('vws',function(t,q){t.from(q('.vz-vw svg'),{y:16,scale:.85,duration:.5,stagger:.12,ease:'back.out(2)'}).from(q('.vz-vw b'),{x:18,duration:.45,stagger:.12,ease:'back.out(2)'},.25);});
+on('fin',function(t,q){t.from(q('svg'),{scale:.8,transformOrigin:'50% 50%',duration:.5,ease:'back.out(2)'}).from(q('.vz-fw'),{x:20,duration:.5},.1);});
+on('door',function(t,q){t.from(q('.vz-dl'),{rotation:8,transformOrigin:'0% 50%',duration:.7},.1).from(q('.go'),{x:60,duration:.7,ease:'power2.out'},.2).from(q('.vz-man'),{y:10,duration:.5},.1).from(q('.n1'),{y:10,duration:.5},.1);});
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',vzInit);else vzInit();
 </script>
 </body>
 
