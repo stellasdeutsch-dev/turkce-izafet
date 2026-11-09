@@ -769,6 +769,24 @@ h1 em,h2 em,h3 em{font-style:normal;color:inherit;font-weight:500}
 .vz-sw .sl{font-size:15px}
 .vz-door .vz-bt{font-size:clamp(14px,4.8vw,22px)}
 }
+
+/* удержание: чекпоинты и мост перед рекламой */
+.chkp{margin:clamp(34px,5vw,56px) 0;padding:20px 24px;border-radius:var(--r);background:var(--peach);display:grid;gap:10px;transition:background-color .22s}
+.chkp:hover{background:var(--peach-2)}
+.chkp-h{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px}
+.chkp-h b{font-weight:800;font-size:18px;line-height:1.3}
+.chkp-bar{flex:1 1 160px;height:8px;border-radius:99px;background:#fff;overflow:hidden}
+.chkp-bar i{display:block;height:100%;border-radius:99px;background:var(--teal)}
+.chkp p{margin:0;font-size:16px;line-height:1.5}
+.brg{padding-bottom:0}
+.brg-g{display:grid;grid-template-columns:minmax(0,322px) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:end}
+.brg-ph{display:block;width:100%;height:auto}
+.brg-t{align-self:center;padding-bottom:clamp(44px,6vw,84px)}
+.brg-l{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:12px}
+.brg-l li{display:flex;gap:12px;align-items:flex-start;font-size:17px;line-height:1.5}
+.brg-l .ic{flex:none;margin-top:3px;color:var(--teal)}
+
+@media (max-width:760px){.brg-g{grid-template-columns:minmax(0,1fr);gap:0}.brg-ph{width:min(100%,320px);margin-inline:auto}.brg-t{border-top:1px solid var(--line);padding-top:30px}}
 </style>
 
 </head>
@@ -836,6 +854,7 @@ h1 em,h2 em,h3 em{font-style:normal;color:inherit;font-weight:500}
   <div class="story-h rv">
     <h2>Товарищ <b>Айше</b></h2>
     <p class="lead">Короткая история о том, как три хвоста меняют человеку пол на целый вечер.</p>
+    <p class="lead">Есть буква без всякого значения. Стоит и держит дверь. <b>Кто она</b>, станет ясно ближе к концу.</p>
 <figure class="vz vz-wed" data-vz="wed"><div class="vz-c"><div class="vz-art">
 <svg viewBox="0 0 560 440" aria-hidden="true"><path d="M0 34c70 34 208 34 280 0s210-34 280 0" fill="none" stroke="#DDE8E6" stroke-width="3"/><g class="bu"><path d="M50 46l24 40 18-34z" fill="#27A094"/><path d="M134 62l18 40 22-38z" fill="#EBC76B"/><path d="M226 58l16 42 22-44z" fill="#27A094"/><path d="M322 44l16 42 22-42z" fill="#EBC76B"/><path d="M412 36l16 40 24-34z" fill="#27A094"/><path d="M496 36l14 38 20-30z" fill="#EBC76B"/></g>
 <rect x="0" y="300" width="560" height="140" fill="#F2F8F7"/>
@@ -957,6 +976,7 @@ h1 em,h2 em,h3 em{font-style:normal;color:inherit;font-weight:500}
     <div class="tb wide" id="tbl"></div>
   </div>
 
+  <div class="chkp"><div class="chkp-h"><b>Больше трети позади</b><span class="chkp-bar" aria-hidden="true"><i style="width:37%"></i></span></div><p>Дальше собираем ту самую фразу со свадьбы, по одной детали. А в последней сцене буква, которая держит дверь.</p></div>
   <div class="sub">
     <h3 class="rv">Собираем <b>"я друг Айше"</b></h3>
     <p class="txt rv">Тот самый вечер на свадьбе. Как надо было. Детали летят по одной.</p>
@@ -1064,6 +1084,7 @@ h1 em,h2 em,h3 em{font-style:normal;color:inherit;font-weight:500}
       <div class="q card mini rv" data-mini="1"></div>
     </div>
   </div>
+  <div class="chkp"><div class="chkp-h"><b>Больше двух третей позади</b><span class="chkp-bar" aria-hidden="true"><i style="width:72%"></i></span></div><p>Дальше восемь ошибок, шесть исключений и десять упражнений. Среди исключений слово <span class="tr-i" lang="tr">cami</span>, которое выглядит как опечатка.</p></div>
 </div></section>
 
 <section class="sec" id="traps" data-floor data-name="Ошибки"><div class="wrap">
@@ -1111,6 +1132,19 @@ h1 em,h2 em,h3 em{font-style:normal;color:inherit;font-weight:500}
 </ul></div>
 </div></section>
 </main>
+<section class="sec hall brg"><div class="wrap brg-g">
+  <img class="brg-ph" src="media/ph-bridge.webp" alt="" width="322" height="511" loading="lazy">
+  <div class="brg-t">
+    <h2>Дверь держит <b>n</b>. Теперь её видно</h2>
+    <ul class="brg-l">
+      <li><svg class="ic"><use href="#i-check"/></svg><span>Скажешь <span class="tr-i" lang="tr"><b class="rt">Ayşe'</b><i class="a1">nin</i> <b class="rt">arkadaş</b><i class="a1">ı</i><i class="a2">yım</i>.</span> Борода может расслабиться.</span></li>
+      <li><svg class="ic"><use href="#i-check"/></svg><span>Прочитаешь длинную вывеску с конца, вагон за вагоном.</span></li>
+    </ul>
+    <p class="lead">Изафет разобран. Остальной турецкий на платформе: 128 гайдов по грамматике и 131 блок лексики. <b>$30 один раз.</b></p>
+    <div class="btns"><a class="btn" href="#buy">Посмотреть цену</a></div>
+  </div>
+</div></section>
+
 <section class="sec" id="ad" data-floor data-name="Платформа" style="padding-top:10px"><div class="wrap">
   <div class="tp ctr rv"><h2><b>Это была</b> одна тема</h2>
   <p class="lead" style="margin-left:auto;margin-right:auto"><b>Вот так разобрана одна тема. На платформе так разобраны все.</b></p></div>
